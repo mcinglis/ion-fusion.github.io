@@ -1,0 +1,45 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:best-practices"
+  ],
+  "labels": [
+    "dependencies"
+  ],
+
+  "forkProcessing": "enabled",
+  "prConcurrentLimit": 10,
+  "prHourlyLimit": 0,
+
+  "bundler": {
+    "enabled": true,
+    "managerFilePatterns": [
+      "/^Gemfile$/",
+      "/^Gemfile.lock$/"
+    ]
+  },
+
+  "docker": {
+    "enabled": true,
+    "pinDigests": true
+  },
+
+  "github-actions": {
+    "enabled": true,
+    "pinDigests": true
+  },
+
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+
+  "packageRules": [
+    {
+      "matchCategories": [
+        "docker"
+      ],
+      "enabled": true,
+      "pinDigests": true
+    }
+  ]
+}
