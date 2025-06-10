@@ -81,7 +81,7 @@ esac
 EOF
 
 # Install Ruby packages:
-COPY --chown=build:build Gemfile ../
+COPY --chown=build:build Gemfile Gemfile.lock ../
 RUN --network=default bundlew install
 
 # Fix Scss file encoding errors; https://github.com/jekyll/jekyll/issues/4268
