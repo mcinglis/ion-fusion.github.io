@@ -6,7 +6,11 @@
   "labels": [
     "dependencies"
   ],
+
   "forkProcessing": "enabled",
+  "prConcurrentLimit": 10,
+  "prHourlyLimit": 0,
+
   "bundler": {
     "enabled": true,
     "managerFilePatterns": [
@@ -14,15 +18,21 @@
       "/^Gemfile.lock$/"
     ]
   },
+
+  "docker": {
+    "enabled": true,
+    "pinDigests": true
+  },
+
   "github-actions": {
     "enabled": true,
     "pinDigests": true
   },
+
   "lockFileMaintenance": {
     "enabled": true
   },
-  "prConcurrentLimit": 10,
-  "prHourlyLimit": 0,
+
   "packageRules": [
     {
       "matchCategories": [
