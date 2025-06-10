@@ -2,9 +2,9 @@ name: main.yml
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, mcinglis/main ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, mcinglis/main ]
   workflow_dispatch:
 
 env:
