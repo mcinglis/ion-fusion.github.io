@@ -43,7 +43,7 @@ Share and Enjoy!
 
 .T.
 
-[comms]:     {{ site.baseurl }}/community/
+[comms]:     {% link community.md %}
 [discord]:   https://discord.gg/8pCSR7EyU9
-[feedback]:  {{ site.baseurl }}{% post_url 2025-04-11-first-contact %}
+[feedback]:  {% post_url 2025-04-11-first-contact %}
 [slack]:     https://join.slack.com/t/ion-fusion/shared_invite/zt-2y0jr8vh2-bZLa66hdyZ3ykHcgOcYkcA

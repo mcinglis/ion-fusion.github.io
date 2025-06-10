@@ -33,5 +33,5 @@ Keep moving forward!
 
 .T.
 
-[comms]:     {{ site.baseurl }}/community/
+[comms]:     {% link community.md %}
 [docs]:      https://docs.ion-fusion.dev/

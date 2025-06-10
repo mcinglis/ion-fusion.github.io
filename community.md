@@ -26,6 +26,6 @@ At this time we cannot promise any particular SLA for responding to issues.
 
 [discord]:   https://discord.gg/8pCSR7EyU9
 [discuss]:   https://github.com/orgs/ion-fusion/discussions
-[news]:      {{ site.baseurl }}/news/
+[news]:      {% link news.md %}
 [new-issue]: https://github.com/ion-fusion/fusion-java/issues/new
 [slack]:     https://join.slack.com/t/ion-fusion/shared_invite/zt-2y0jr8vh2-bZLa66hdyZ3ykHcgOcYkcA

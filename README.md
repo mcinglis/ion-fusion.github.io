@@ -118,27 +118,3 @@ Surprisingly, I could only find two complaints about this problem:
   to address the problem, but its from an obsolete workflow version. And that approach
   doesn’t cover the older “publish from a branch” approach I’m currently using.
 
-
-## Trouble Spots
-
-### Be careful with links
-
-GitHub Pages is (as of 2025-04) [pinned](https://pages.github.com/versions/) to Jekyll 3.10,
-but 4.0.0 was [released](https://rubygems.org/gems/jekyll/versions/4.0.0) 
-in 2019. Be careful when reading documentation and searching for help!
-
-In Jekyll 3, the `link` and `post_url` Liquid tags are arguably broken: the do not include the
-`site.baseurl` so the result is wrong when the base is non-empty.
-This was [fixed](https://jekyllrb.com/docs/liquid/tags/#links) in Jekyll 4.
-
-As a result, uses of `link` or `post_url` in this project need to be explicitly 
-prefixed with the base, as in:
-
-```
-{{ site.baseurl }}{% post_url 2025-04-11-first-contact %}
-```
-
-This could potentially be simplified with a custom Liquid tag, as document
-[here](https://www.jessesquires.com/blog/2021/06/06/rss-feeds-jekyll-and-absolute-versus-relative-urls),
-but it would be preferable to switch our Pages deployment to use GitHub Actions,
-and then update to Jekyll 4.

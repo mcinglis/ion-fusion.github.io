@@ -50,14 +50,14 @@ everything for public development and use.
 {: .notice--warning}
 
 
-[apache]: {{ site.baseurl }}{% link license.md %}
+[apache]: {% link license.md %}
 [cli]:    https://docs.ion-fusion.dev/latest/tutorial_cli.html
 [data]:   https://amazon-ion.github.io/ion-docs/docs/spec.html
-[feedback]: {{ site.baseurl }}{% post_url 2025-04-11-first-contact %}
+[feedback]: {% post_url 2025-04-11-first-contact %}
 [ion]:    https://amazon-ion.github.io/ion-docs/index.html
 [library]: https://docs.ion-fusion.dev/latest/javadoc/
 [Racket]: https://racket-lang.org/
-[welcome]: {{ site.baseurl }}{% post_url 2025-04-11-welcome-to-ion-fusion %}
+[welcome]: {% post_url 2025-04-11-welcome-to-ion-fusion %}
 
 
 <!-- Forked from layout home.html -->
