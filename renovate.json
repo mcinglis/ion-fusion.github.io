@@ -3,6 +3,8 @@
   "extends": ["config:best-practices"],
   "labels": ["dependencies"],
 
+  "forkProcessing": "enabled",
+
   "bundler": {
     "enabled": true,
     "fileMatch": ["^Gemfile$", "^Gemfile.lock$"]
